@@ -388,9 +388,6 @@ a {
 .dropdown {
   padding: 4px 20px;
 
-  min-width: 72px;
-  max-width: 129px;
-
   color: var(--main-text);
   cursor: pointer;
   background-color: var(--secondary-theme);
@@ -414,6 +411,13 @@ a {
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.gallery-item {
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .gallery-title {
@@ -422,19 +426,12 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-}
-
-.gallery-item {
-  margin-top: 30px;
-  margin-right: 30px;
+  margin-top: 20px;
 }
 
 .gallery-description {
-   color: var(--gray-text);
+  color: var(--gray-text);
   font-size: 16px;
   line-height: 1.87;
+  margin-top: 4px;
 }
-
-
-.gallery-item:last-child {
-  margin-right: 0;
